@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtCleanliness"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/tamachoi_welcome"
+        app:layout_constraintBottom_toTopOf="@+id/btnClean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="91dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="51dp"
+        android:text="Feed"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petImage" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="48dp"
+        android:text="Play"
+        app:layout_constraintEnd_toStartOf="@+id/btnClean"
+        app:layout_constraintTop_toBottomOf="@+id/petImage" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="29dp"
+        android:text="Wash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petImage" />
+
+    <TextView
+        android:id="@+id/HtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="54dp"
+        android:text="Hunger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFeed" />
+
+    <TextView
+        android:id="@+id/JtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="58dp"
+        android:text="Happiness"
+        app:layout_constraintBottom_toTopOf="@+id/CleantextView4"
+        app:layout_constraintEnd_toStartOf="@+id/txtJoy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HtextView" />
+
+    <TextView
+        android:id="@+id/CleantextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="58dp"
+        android:text="Cleanliness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JtextView2" />
+
+    <EditText
+        android:id="@+id/txtHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txtJoy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HtextView"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+    <EditText
+        android:id="@+id/txtJoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txtClean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/JtextView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtHunger" />
+
+    <EditText
+        android:id="@+id/txtClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toEndOf="@+id/CleantextView4"
+        tools:layout_editor_absoluteY="607dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:text="Hi I'm Henry Hamster"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
